@@ -51,18 +51,18 @@ class GUI:
 		urll = 'https://github.com/Anuken/Mindustry/releases/download/v116/Mindustry.jar'
 		try:
 			os.mkdir(v6path)
-			urllib.request.urlretrieve(urll, 'cache/Mindustrylauncher/v6/m.jar')
+			urllib.request.urlretrieve(urll, v6pathj)
 			print('Downloaded Latest')
 			downwin = self.builder.get_object('downwindow')
 			downwin.show_all()
 		except OSError as error:
 			os.remove()
-			urllib.request.urlretrieve(urll, 'cache/Mindustrylauncher/v6/m.jar')
+			urllib.request.urlretrieve(urll, v6pathj)
 			print('Downloaded Latest')
 			downwin = self.builder.get_object('downwindow')
 			downwin.show_all()
 		except OSError as error:
-			urllib.request.urlretrieve(urll, 'cache/Mindustrylauncher/v6/m.jar')
+			urllib.request.urlretrieve(urll, v6pathj)
 			print('Downloaded Latest')
 			downwin = self.builder.get_object('downwindow')
 			downwin.show_all()
@@ -73,18 +73,18 @@ class GUI:
 		url5 = 'https://github.com/Anuken/Mindustry/releases/download/v104.6/Mindustry.jar'
 		try:
 			os.makedirs('cache/Mindustrylauncher/v5')
-			urllib.request.urlretrieve(url5, 'cache/Mindustrylauncher/v5/m.jar')
+			urllib.request.urlretrieve(url5, v5pathj)
 			print('Downloaded V5')
 			downwin = self.builder.get_object('downwindow')
 			downwin.show_all()
 		except OSError as error:
 			os.remove('cache/Mindustrylauncher/v5/m.jar')
-			urllib.request.urlretrieve(url5, 'cache/Mindustrylauncher/v5/m.jar')
+			urllib.request.urlretrieve(url5, v5pathj)
 			print('Downloaded V5')
 			downwin = self.builder.get_object('downwindow')
 			downwin.show_all()
 		except OSError as error:
-			urllib.request.urlretrieve(url5, 'cache/Mindustrylauncher/v5/m.jar')
+			urllib.request.urlretrieve(url5, v5pathj)
 			print('Downloaded V5')
 			downwin = self.builder.get_object('downwindow')
 			downwin.show_all()
