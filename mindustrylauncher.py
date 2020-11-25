@@ -48,7 +48,7 @@ class GUI:
 		userpath = os.path.expanduser('~')
 		v6path = userpath + "/.cache/mindustrylauncher/v6"
 		v6pathj = userpath + "/.cache/mindustrylauncher/v6/m.jar"
-		urll = 'https://github.com/Anuken/Mindustry/releases/download/v116/Mindustry.jar'
+		urll = 'https://github.com/Anuken/Mindustry/releases/download/v117.1/Mindustry.jar'
 		try:
 			os.mkdir(v6path)
 			urllib.request.urlretrieve(urll, v6pathj)
