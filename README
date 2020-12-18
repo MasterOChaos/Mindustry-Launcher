@@ -1,11 +1,7 @@
-Simple launcher for mindustry made with python and gtk for linux
-Look in VERSIONS.txt if you need help choosing a version
+Simple launcher for mindustry made with python and wxpython
 this was made to be as simple as possible so it isn't really feature-full but it is functional
+If the window seems unresponsive after clicking "UPDATE" thats because its downloading the file
 
 TO-DO LIST
 Window Icon
-Optimizations
 Add configuration options
-Releases
-OSX support
-
