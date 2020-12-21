@@ -55,15 +55,15 @@ class MAINAPP(wx.Frame):
 
 	def pvl_click(self, event):
 		userpath = os.path.expanduser('~')
-		v6pathj = userpath + '\.cache\mindustrylauncher\v6\m.jar'
+		v6pathj = userpath + '\AppData\Roaming\mindustrylauncher\v6\m.jar'
 		print("Launching Latest Version")
 		os.system("java -jar " + v6pathj)
 		event.Skip()
 
 	def uplat_click(self, event):
 		userpath = os.path.expanduser('~')
-		v6pathj = userpath + '\.cache\mindustrylauncher\v6\m.jar'
-		v6path = userpath + "\.cache\mindustrylauncher\v6"
+		v6pathj = userpath + '\AppData\Roaming\mindustrylauncher\v6\m.jar'
+		v6path = userpath + "\AppData\Roaming\mindustrylauncher\v6"
 		url14 = "https://raw.githubusercontent.com/MasterOChaos/MindustryLauncherPython/wxwidgets/README"
 		url13 = "https://github.com/Anuken/Mindustry/releases/download/v121.5/Mindustry.jar"
 		url12 = "https://github.com/Anuken/Mindustry/releases/download/v122/Mindustry.jar"
@@ -300,7 +300,7 @@ class MAINAPP(wx.Frame):
 
 	def pv5_click(self, event):
 		userpath = os.path.expanduser('~')
-		v5pathj = userpath + "\.cache\mindustrylauncher\v5\m.jar"
+		v5pathj = userpath + "\AppData\Roaming\mindustrylauncher\v5\m.jar"
 		print("Launching V5")
 		os.system("java -jar " + v5pathj)
 		event.Skip()
@@ -308,8 +308,8 @@ class MAINAPP(wx.Frame):
 	def upv5_click(self, event):
 		urlv5 = 'https://github.com/Anuken/Mindustry/releases/download/v104.6/Mindustry.jar'
 		userpath = os.path.expanduser('~')
-		v5path = userpath + "\.cache/mindustrylauncher\v5"
-		v5pathj = userpath + "\.cache/mindustrylauncher\v5\m.jar"
+		v5path = userpath + "\AppData\Roaming\mindustrylauncher\v5"
+		v5pathj = userpath + "\AppData\Roaming\mindustrylauncher\v5\m.jar"
 		try:
 			urllib.request.urlretrieve(urlv5, v5pathj)
 			print('Downloaded V5')
@@ -327,7 +327,7 @@ class MAINAPP(wx.Frame):
 
 	def pv4_click(self, event):
 		userpath = os.path.expanduser('~')
-		v4pathj = userpath + "\.cache/mindustrylauncher\v4\m.jar"
+		v4pathj = userpath + "\AppData\Roaming\mindustrylauncher\v4\m.jar"
 		print("Launching V4")
 		os.system("java -jar " + v4pathj)
 		event.Skip()
@@ -335,8 +335,8 @@ class MAINAPP(wx.Frame):
 	def upv4_click(self, event):
 		urlv4 = 'https://github.com/Anuken/Mindustry/releases/download/v96/Mindustry.jar'
 		userpath = os.path.expanduser('~')
-		v4path = userpath + "\.cache\mindustrylauncher\v4"
-		v4pathj = userpath + "\.cache\mindustrylauncher\v4\m.jar"
+		v4path = userpath + "\AppData\Roaming\mindustrylauncher\v4"
+		v4pathj = userpath + "\AppData\Roaming\mindustrylauncher\v4\m.jar"
 		try:
 			urllib.request.urlretrieve(urlv4, v4pathj)
 			print('Downloaded V4')
