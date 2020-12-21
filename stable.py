@@ -64,19 +64,24 @@ class MAINAPP(wx.Frame):
 		userpath = os.path.expanduser('~')
 		v6pathj = userpath + '/.cache/mindustrylauncher/v6/m.jar'
 		v6path = userpath + "/.cache/mindustrylauncher/v6"
-		url3 = "https://github.com/Anuken/Mindustry/releases/download/v121.4/Mindustry.jar"
-		url2 = "https://github.com/Anuken/Mindustry/releases/download/v122/Mindustry.jar"
-		url1 = "https://github.com/Anuken/Mindustry/releases/download/v123/Mindustry.jar"
+		url8 = "https://github.com/Anuken/Mindustry/releases/download/v121.4/Mindustry.jar"
+		url7 = "https://github.com/Anuken/Mindustry/releases/download/v121.5/Mindustry.jar"
+		url6 = "https://github.com/Anuken/Mindustry/releases/download/v122/Mindustry.jar"
+		url5 = "https://github.com/Anuken/Mindustry/releases/download/v122.1/Mindustry.jar"
+		url4 = "https://github.com/Anuken/Mindustry/releases/download/v122.2/Mindustry.jar"
+		url3 = "https://github.com/Anuken/Mindustry/releases/download/v123/Mindustry.jar"
+		url2 = "https://github.com/Anuken/Mindustry/releases/download/v123.1/Mindustry.jar"
+		url1 = "https://github.com/Anuken/Mindustry/releases/download/v123.2/Mindustry.jar"
 		try:
-			urllib.request.urlretrieve(url3, v6pathj)
+			urllib.request.urlretrieve(url8, v6pathj)
 			print('Downloaded V6')
 		except OSError as error:
 			os.remove(v6pathj)
-			urllib.request.urlretrieve(url3, v6pathj)
+			urllib.request.urlretrieve(url8, v6pathj)
 			print('Downloaded V6')
 		except OSError as error:
 			os.makedirs(v6path)
-			urllib.request.urlretrieve(url3, v6pathj)
+			urllib.request.urlretrieve(url8, v6pathj)
 			print('Downloaded V6')
 		except:
 			print("Failed to download")
