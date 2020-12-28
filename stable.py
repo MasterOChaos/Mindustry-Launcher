@@ -61,20 +61,36 @@ class MAINAPP(wx.Frame):
 
 	def uplat_click(self, event):
 		v6pathj = 'v6.jar'
-		url14 = "https://github.com/Anuken/Mindustry/releases/download/v121.4/Mindustry.jar"
-		url13 = "https://github.com/Anuken/Mindustry/releases/download/v121.5/Mindustry.jar"
-		url12 = "https://github.com/Anuken/Mindustry/releases/download/v122/Mindustry.jar"
-		url11 = "https://github.com/Anuken/Mindustry/releases/download/v122.1/Mindustry.jar"
-		url10 = "https://github.com/Anuken/Mindustry/releases/download/v122.2/Mindustry.jar"
-		url9 = "https://github.com/Anuken/Mindustry/releases/download/v122.3/Mindustry.jar"
-		url8 = "https://github.com/Anuken/Mindustry/releases/download/v122.4/Mindustry.jar"
-		url7 = "https://github.com/Anuken/Mindustry/releases/download/v122.5/Mindustry.jar"
-		url6 = "https://github.com/Anuken/Mindustry/releases/download/v123/Mindustry.jar"
-		url5 = "https://github.com/Anuken/Mindustry/releases/download/v123.1/Mindustry.jar"
-		url4 = "https://github.com/Anuken/Mindustry/releases/download/v123.2/Mindustry.jar"
-		url3 = "https://github.com/Anuken/Mindustry/releases/download/v123.3/Mindustry.jar"
-		url2 = "https://github.com/Anuken/Mindustry/releases/download/v123.4/Mindustry.jar"
-		url1 = "https://github.com/Anuken/Mindustry/releases/download/v123.5/Mindustry.jar"
+		url30 = "https://github.com/Anuken/Mindustry/releases/download/v122/Mindustry.jar"
+		url29 = "https://github.com/Anuken/Mindustry/releases/download/v122.1/Mindustry.jar"
+		url28 = "https://github.com/Anuken/Mindustry/releases/download/v122.2/Mindustry.jar"
+		url27 = "https://github.com/Anuken/Mindustry/releases/download/v122.3/Mindustry.jar"
+		url26 = "https://github.com/Anuken/Mindustry/releases/download/v122.4/Mindustry.jar"
+		url25 = "https://github.com/Anuken/Mindustry/releases/download/v122.5/Mindustry.jar"
+		url24 = "https://github.com/Anuken/Mindustry/releases/download/v123/Mindustry.jar"
+		url23 = "https://github.com/Anuken/Mindustry/releases/download/v123.1/Mindustry.jar"
+		url22 = "https://github.com/Anuken/Mindustry/releases/download/v123.2/Mindustry.jar"
+		url21 = "https://github.com/Anuken/Mindustry/releases/download/v123.3/Mindustry.jar"
+		url20 = "https://github.com/Anuken/Mindustry/releases/download/v123.4/Mindustry.jar"
+		url19 = "https://github.com/Anuken/Mindustry/releases/download/v123.5/Mindustry.jar"
+		url18 = "https://github.com/Anuken/Mindustry/releases/download/v124/Mindustry.jar"
+		url17 = "https://github.com/Anuken/Mindustry/releases/download/v124.1/Mindustry.jar"
+		url16 = "https://github.com/Anuken/Mindustry/releases/download/v124.2/Mindustry.jar"
+		url15 = "https://github.com/Anuken/Mindustry/releases/download/v124.3/Mindustry.jar"
+		url14 = "https://github.com/Anuken/Mindustry/releases/download/v124.4/Mindustry.jar"
+		url13 = "https://github.com/Anuken/Mindustry/releases/download/v124.5/Mindustry.jar"
+		url12 = "https://github.com/Anuken/Mindustry/releases/download/v125/Mindustry.jar"
+		url11 = "https://github.com/Anuken/Mindustry/releases/download/v125.1/Mindustry.jar"
+		url10 = "https://github.com/Anuken/Mindustry/releases/download/v125.2/Mindustry.jar"
+		url9 = "https://github.com/Anuken/Mindustry/releases/download/v125.3/Mindustry.jar"
+		url8 = "https://github.com/Anuken/Mindustry/releases/download/v125.4/Mindustry.jar"
+		url7 = "https://github.com/Anuken/Mindustry/releases/download/v125.5/Mindustry.jar"
+		url6 = "https://github.com/Anuken/Mindustry/releases/download/v126/Mindustry.jar"
+		url5 = "https://github.com/Anuken/Mindustry/releases/download/v126.1/Mindustry.jar"
+		url4 = "https://github.com/Anuken/Mindustry/releases/download/v126.2/Mindustry.jar"
+		url3 = "https://github.com/Anuken/Mindustry/releases/download/v126.3/Mindustry.jar"
+		url2 = "https://github.com/Anuken/Mindustry/releases/download/v126.4/Mindustry.jar"
+		url1 = "https://github.com/Anuken/Mindustry/releases/download/v126.5/mindustry.jar"
 		##here comes the execption handling
 		def a1():
 			try:
@@ -229,7 +245,182 @@ class MAINAPP(wx.Frame):
 			except:
 				print("Failed to download")
 
-		for func in [a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14]: # change list order to change execution order.
+		def a15():
+			try:
+				urllib.request.urlretrieve(url15, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url15, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+		def a16():
+			try:
+				urllib.request.urlretrieve(url16, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url16, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		def a17():
+			try:
+				urllib.request.urlretrieve(url17, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url17, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		def a18():
+			try:
+				urllib.request.urlretrieve(url18, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url18, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		def a19():
+			try:
+				urllib.request.urlretrieve(url19, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url19, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		def a20():
+			try:
+				urllib.request.urlretrieve(url20, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url20, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		def a21():
+			try:
+				urllib.request.urlretrieve(url21, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url21, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		def a22():
+			try:
+				urllib.request.urlretrieve(url22, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url22, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		def a23():
+			try:
+				urllib.request.urlretrieve(url23, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url23, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		def a24():
+			try:
+				urllib.request.urlretrieve(url24, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url24, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		def a25():
+			try:
+				urllib.request.urlretrieve(url25, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url25, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		def a26():
+			try:
+				urllib.request.urlretrieve(url26, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url26, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		def a27():
+			try:
+				urllib.request.urlretrieve(url27, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url27, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		def a28():
+			try:
+				urllib.request.urlretrieve(url28, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url28, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		def a29():
+			try:
+				urllib.request.urlretrieve(url29, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url29, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		def a30():
+			try:
+				urllib.request.urlretrieve(url30, v6pathj)
+				print('Downloaded V6')
+			except OSError as error:
+				os.remove(v6pathj)
+				urllib.request.urlretrieve(url30, v6pathj)
+				print('Downloaded V6')
+			except:
+				print("Failed to download")
+
+		for func in [a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a20, a21, a22, a23, a24, a25, a26, a27, a28, a29, a30]: # change list order to change execution order.
 			try:
 				func()
 				print("eh it worked i guess")
