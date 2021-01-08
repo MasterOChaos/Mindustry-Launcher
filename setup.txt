@@ -1,0 +1,38 @@
+UBUNTU
+____________________________________________________________________________________________________
+20.04 
+pip3 install -U \
+    -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-20.04 \
+    wxPython
+    
+
+18.04
+pip3 install -U \
+    -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-20.04 \
+    wxPython
+    
+    
+16.04
+pip3 install -U \
+    -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-20.04 \
+    wxPython
+    
+
+FEDORA
+_____________________________________________________________________________________________________
+31
+pip3 install -U \
+    -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/fedora-31 \
+    wxPython
+30
+pip3 install -U \
+    -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/fedora-30 \
+    wxPython
+29
+pip3 install -U \
+    -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/fedora-29 \
+    wxPython
+    
+    
+DEBIAN
+______________________________________________________________________________________________________
